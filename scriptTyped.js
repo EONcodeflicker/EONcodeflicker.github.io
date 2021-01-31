@@ -155,7 +155,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	var typed = new Typed('#itheme-typed', {
 		strings: ['Software Developer', 'Lead Web Designer', 'Bassist', 'Composer', 'Songwriter', 'Musician'],
-		typeSpeed: 560,
+		typeSpeed: 63,
 		backSpeed: 0,
 		fadeOut: true,
 		smartBackspace: true,
