@@ -154,7 +154,7 @@ $(document).ready(function(){
 /* DEMO 6 AND DEMO 8 TYPED TEXT */
 $(document).ready(function(){
 	var typed = new Typed('#itheme-typed', {
-		strings: ['WEB', 'DEVELOPER'],
+		strings: ['Software Developer', 'Lead Web Designer', 'Bassist', 'Composer', 'Songwriter', 'Musician'],
 		typeSpeed: 300,
 		backSpeed: 0,
 		fadeOut: true,
