@@ -361,6 +361,7 @@ h4,
 h5,
 h6 {
     font-family: 'Paytone One', sans-serif;
+    font-size:33px;
 }
 
 #ithemeD9-body h1,
@@ -674,6 +675,7 @@ h6 {
 .itheme-color-2 {
     font-size:33px;
     color:purple;
+    text-shadow: 2.5px 2.5px lightblue;
 }
 
 
