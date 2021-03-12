@@ -158,6 +158,7 @@ $(document).ready(function(){
 		typeSpeed: 25,
 		backSpeed: 0,
 		fadeOut: true,
+                fontSize: 10px,
 		smartBackspace: true,
 		loop: true
 	});
