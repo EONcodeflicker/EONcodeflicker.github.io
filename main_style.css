@@ -1146,7 +1146,10 @@ h6 {
     background-color: #0D1821;
     color: #5E503F;
 }
-
+#itheme-navbar .itheme-nav-link:visited{
+	color:lime;
+	
+}
 #itheme-navbar .navbar-brand {
     color: black;
     font-size: 23px;
