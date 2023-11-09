@@ -29,8 +29,8 @@ Description:    Custom CSS
    width:100vw;
 	vertical-align:middle; 
 	background-position:center;
-background-size:contain;
-	position:absolute;
+background-size:cover;
+	position:relative;
 	text-align:center;
 	left:50%;
     font-family: 'Poppins', sans-serif;
