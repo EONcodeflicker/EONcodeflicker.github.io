@@ -1835,7 +1835,7 @@ h6 {
 
 /* CARD COLUMNS */
 
-@media (max-width: 575px) {
+@media (max-width: 302px) {
     .itheme-card-columns {
         column-count: 1;
         column-gap: 0;
