@@ -32,7 +32,7 @@ Description:    Custom CSS
 background-size:cover;
 	position:relative;
 	text-align:center;
-	left:50%;
+	left:auto;
     font-family: 'Poppins', sans-serif;
 }
 	/* DEMO 9 BODY */
