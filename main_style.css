@@ -29,7 +29,6 @@ Description:    Custom CSS
    
 	position:relative;
 	left:50%;
-    background-position:center;
     font-family: 'Poppins', sans-serif;
 }
 	/* DEMO 9 BODY */
@@ -42,7 +41,7 @@ Description:    Custom CSS
 
 	position:relative;
 	left:50%;
-    background-position:center;
+
   
     font-family: 'Poppins', sans-serif;
 }
