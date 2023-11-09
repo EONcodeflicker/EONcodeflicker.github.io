@@ -43,7 +43,7 @@ Description:    Custom CSS
 	position:relative;
 	left:50%;
     background-position:center;
-    vertical-align:middle;
+  
     font-family: 'Poppins', sans-serif;
 }
 
@@ -62,7 +62,6 @@ Description:    Custom CSS
 	position:relative;
 	left:50%;
     background-position:center;
-    vertical-align:middle;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -81,7 +80,7 @@ Description:    Custom CSS
 	position:relative;
 	left:50%;
     background-position:center;
-    vertical-align:middle;
+
     font-family: orbitron, sans-serif;
 }
 
