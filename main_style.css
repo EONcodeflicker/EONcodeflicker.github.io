@@ -26,13 +26,13 @@ Description:    Custom CSS
     color: #F3F3F3;
     font-size: 16px;
     height: 100vh;
-   width:100vw;
-	vertical-align:middle; 
+   width:250vw;
+
 	background-position:center;
 background-size:cover;
 	position:relative;
 	text-align:center;
-	left:auto;
+	
     font-family: 'Poppins', sans-serif;
 }
 	/* DEMO 9 BODY */
