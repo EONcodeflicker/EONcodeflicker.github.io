@@ -27,7 +27,55 @@ Description:    Custom CSS
     font-size: 16px;
     height: 100vh;
     width:100vw;
+    background-position:center;
+    vertical-align:middle;
     font-family: 'Poppins', sans-serif;
+}
+	/* DEMO 9 BODY */
+
+#ithemeD9-body {
+    background-color: #FFFCF9;
+    color: #12130F;
+    font-size: 16px;
+    height: 100vh;
+  width:100vw;
+    background-position:center;
+    vertical-align:middle;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* END OF DEMO 9 BODY */
+
+
+/* DEMO 10 BODY */
+
+#ithemeD10-body {
+    background-color: #0B0A08;
+    color: #D7CDCC;
+    font-size: 16px;
+    height: 100vh;
+	  width:100vw;
+    background-position:center;
+    vertical-align:middle;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* END OF DEMO 10 BODY */
+
+
+/* DEMO INDEX BODY */
+
+#ithemeIndex-body {
+    background-color: #001A23;
+    color: #F3F3F3;
+    font-size: 16px;
+    height: 100vh;
+	  width:100vw;
+    background-position:center;
+    vertical-align:middle;
+    font-family: orbitron, sans-serif;
 }
 
 
