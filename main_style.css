@@ -30,9 +30,9 @@ Description:    Custom CSS
 	vertical-align:middle; 
 	background-position:center;
 background-size:contain;
-	position:relative;
+	position:absolute;
 	text-align:center;
-	
+	left:50%;
     font-family: 'Poppins', sans-serif;
 }
 	/* DEMO 9 BODY */
