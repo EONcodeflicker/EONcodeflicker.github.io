@@ -1362,7 +1362,7 @@ h6 {
 }
 
 .itheme-progress-bar-1 {
-    width: 95%;
+    width: 100%;
     text-align: left;
     padding-left: 10px;
     border-radius: 0;
@@ -1394,7 +1394,7 @@ h6 {
 }
 
 .itheme-progress-bar-5 {
-    width: 80%;
+    width: 95%;
     text-align: left;
     padding-left: 10px;
     border-radius: 0;
