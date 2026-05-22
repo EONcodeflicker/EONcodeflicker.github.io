@@ -26,10 +26,10 @@ Description:    Custom CSS
     color: #F3F3F3;
     font-size: 16px;
     height: 100vh;
-    width: 100%;
-    background-position: center;
-    position: relative;
-    text-align: center;
+    width:525px;
+    background-position:center;
+    position:relative;
+    text-align:center;
     font-family: 'Poppins', sans-serif;
 }
 	/* DEMO 9 BODY */
@@ -39,9 +39,11 @@ Description:    Custom CSS
     color: #12130F;
     font-size: 16px;
     height: 100vh;
-	width: 100%;
-	position: relative;
-	left: auto;
+	width:100vw;
+	position:relative;
+	left:auto;
+
+  
     font-family: 'Poppins', sans-serif;
 }
 
@@ -56,10 +58,11 @@ Description:    Custom CSS
     color: #D7CDCC;
     font-size: 16px;
     height: 100vh;
-	width: 100%;
-	position: relative;
-	left: auto;
-    background-position: center;
+	width:100vw;
+	 width:100%;
+	position:relative;
+	left:auto;
+    background-position:center;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -74,12 +77,14 @@ Description:    Custom CSS
     color: #F3F3F3;
     font-size: 16px;
     height: 100vh;
-    width: 100%;
-	position: relative;
-	left: auto;
-    background-position: center;
+width:100vw;
+	position:relative;
+	left:auto;
+    background-position:center;
+
     font-family: orbitron, sans-serif;
 }
+
 
 	
     }
@@ -143,43 +148,44 @@ Description:    Custom CSS
 /* HEADLINES */
 
 #itheme-body h1,
-#itheme-body h2,
-#itheme-body h3,
-#itheme-body h4,
-#itheme-body h5,
-#itheme-body h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Paytone One', sans-serif;
+  
 }
 
 #ithemeD9-body h1,
-#ithemeD9-body h2,
-#ithemeD9-body h3,
-#ithemeD9-body h4,
-#ithemeD9-body h5,
-#ithemeD9-body h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Paytone One', sans-serif;
 }
 
 #ithemeD10-body h1,
-#ithemeD10-body h2,
-#ithemeD10-body h3,
-#ithemeD10-body h4,
-#ithemeD10-body h5,
-#ithemeD10-body h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Paytone One', sans-serif;
 }
 
 #ithemeIndex-body h1,
-#ithemeIndex-body h2,
-#ithemeIndex-body h3,
-#ithemeIndex-body h4,
-#ithemeIndex-body h5,
-#ithemeIndex-body h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Paytone One', sans-serif;
 }
 
 
-/* END OF HEADLINES */
+/* HEADLINES */
 
 
 /* CONTAINER */
@@ -460,8 +466,8 @@ Description:    Custom CSS
 }
 
 .itheme-color-2 {
-    font-size: 33px;
-    color: purple;
+    font-size:33px;
+    color:purple;
     text-shadow: 2.5px 2.5px lightblue;
 }
 
@@ -823,7 +829,7 @@ Description:    Custom CSS
 }
 
 
-/* END OF DEMO 1 TO DEMO 8 HORIZONTAL RULE */
+/* END OF DEMO 1 TO DEMO 8 HORIZONATAL RULE */
 
 
 /* DEMO 9 HORIZONTAL RULE */
@@ -865,7 +871,7 @@ Description:    Custom CSS
 }
 
 
-/* END OF DEMO 9 HORIZONTAL RULE */
+/* END OF DEMO 9 HORIZONATAL RULE */
 
 
 /* DEMO 10 HORIZONTAL RULE */
@@ -907,7 +913,7 @@ Description:    Custom CSS
 }
 
 
-/* END OF DEMO 10 HORIZONTAL RULE */
+/* END OF DEMO 10 HORIZONATAL RULE */
 
 
 /* DEMO 1 TO DEMO 8 NAVIGATION */
@@ -933,18 +939,17 @@ Description:    Custom CSS
     background-color: #0D1821;
     color: #5E503F;
 }
-
 #itheme-navbar .itheme-nav-link:active {
-	color: lime;
+	color:lime;
+	
 }
-
 #itheme-navbar .navbar-brand {
     color: black;
     font-size: 23px;
     font-family: Neo Sans Pro Black;
 }
 
-#itheme-navbar .navbar-brand:hover {
+#itheme-navbar .navbar-brand :hover {
     color: #00CECB;
     font-size: 23px;
 }
