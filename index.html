@@ -1,468 +1,906 @@
-
 <!DOCTYPE html>
-<html lang="zxx">
-<!-- HEAD -->
-
+<html lang="en">
 <head>
-    <!-- TITLE -->
-    <title>Official Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="keywords" content="eon movieset,thomas flick, tom flick, Thomas Flick,Thomas Flick's Website, Tom Flick's website, Tom Flick's Portfolio, web developer portfolios, portfolio, eon movieset">
-    <meta name="description" content="Thomas Flick's Portfolio">
-    <meta name="author" content="You can add author name here">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS -->
-    <!-- FAVICON -->
-    <link href="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/21032325_1425925367463376_8620312080095543498_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=05277f&efg=eyJpIjoidCJ9&_nc_ohc=hTx9eBZuOpI" rel="icon">
-    <!-- GOOGLE FONT CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Paytone+One&display=swap" rel="stylesheet">
-   
-    <!-- FONT AWESOME CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
-    <!-- BOOTSTRAP CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- OWL CAROUSEL CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
-    <!-- ANIMATE CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
-    <!-- MAIN STYLESHEET CSS -->
-    <link href="main_style.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="keywords" content="eon movieset,thomas flick, tom flick, Thomas Flick,Thomas Flick's Website, Tom Flick's website, Tom Flick's Portfolio, web developer portfolios, portfolio, eon movieset">
+<meta name="description" content="Thomas Flick's Portfolio">
+<meta name="author" content="You can add author name here">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thomas Flick | Official Portfolio</title>
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Paytone+One&display=swap" rel="stylesheet">
+
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- OWL -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+<!-- ANIMATE -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+#typed{
+    font-size:33px;
+}
+body{
+background:#03101d;
+font-family:'Poppins',sans-serif;
+color:white;
+overflow-x:hidden;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:linear-gradient(to bottom,#ff00c8,#0066ff,#00ff88);
+border-radius:10px;
+}
+
+/* NAVBAR */
+
+#itheme-navbar{
+background:rgba(0,0,0,.75);
+backdrop-filter:blur(10px);
+padding:15px 30px;
+transition:.4s;
+}
+
+.navbar-brand{
+font-family:'Paytone One',sans-serif;
+font-size:28px;
+color:white!important;
+letter-spacing:2px;
+}
+
+.itheme-nav-link{
+color:white!important;
+margin:0 10px;
+padding:12px 20px!important;
+font-weight:600;
+position:relative;
+transition:.4s;
+border-radius:10px;
+overflow:hidden;
+}
+
+.itheme-nav-link:hover{
+background:linear-gradient(135deg,#4b0082,#7b2ff7,#2d00f7);
+transform:translateY(-3px);
+box-shadow:0 0 20px rgba(123,47,247,.7);
+}
+
+/* HERO */
+
+header{
+min-height:100vh;
+display:flex;
+align-items:center;
+background:
+linear-gradient(rgba(3,16,29,.85),rgba(3,16,29,.9)),
+url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2000&auto=format&fit=crop') center/cover;
+position:relative;
+}
+
+.hero-title{
+font-size:75px;
+font-weight:900;
+line-height:1;
+font-family:'Paytone One',sans-serif;
+text-transform:uppercase;
+}
+
+.hero-title span{
+background:linear-gradient(to right,#00ff88,#00bbff,#b700ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero-desc{
+font-size:18px;
+line-height:1.9;
+color:#d5d5d5;
+margin-top:30px;
+}
+
+.itheme-button{
+background:linear-gradient(135deg,#ff0080,#7928ca,#0070f3);
+border:none;
+padding:15px 35px;
+font-weight:700;
+color:white;
+border-radius:50px;
+transition:.4s;
+margin-top:20px;
+display:inline-block;
+}
+
+.itheme-button:hover{
+transform:translateY(-5px) scale(1.03);
+box-shadow:0 0 30px rgba(183,0,255,.6);
+text-decoration:none;
+color:white;
+}
+
+.video-box{
+border:5px solid rgba(255,255,255,.1);
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 0 50px rgba(0,119,255,.3);
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0px);}
+}
+
+/* SECTION */
+
+section{
+padding:140px 0;
+position:relative;
+}
+
+.section-title{
+font-size:65px;
+font-weight:900;
+font-family:'Paytone One',sans-serif;
+margin-bottom:25px;
+text-transform:uppercase;
+}
+
+.section-title span{
+background:linear-gradient(to right,#00ff99,#00bbff,#b700ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.section-desc{
+max-width:900px;
+line-height:2;
+font-size:18px;
+color:#ddd;
+}
+
+/* GLOW */
+
+.glow-box{
+background:rgba(255,255,255,.03);
+border:1px solid rgba(255,255,255,.08);
+border-radius:20px;
+padding:40px;
+transition:.4s;
+backdrop-filter:blur(10px);
+}
+
+.glow-box:hover{
+transform:translateY(-10px);
+box-shadow:0 0 35px rgba(0,153,255,.4);
+}
+
+/* SKILLS */
+
+.skill{
+margin-bottom:30px;
+}
+
+.skill h5{
+font-weight:700;
+margin-bottom:10px;
+}
+
+.progress{
+height:18px;
+background:#111;
+border-radius:30px;
+overflow:hidden;
+}
+
+.progress-bar{
+background:linear-gradient(to right,#ff00cc,#3333ff,#00ff99);
+font-weight:700;
+}
+
+/* SERVICES */
+
+.service-card{
+padding:40px 30px;
+border-radius:20px;
+height:100%;
+background:linear-gradient(135deg,#0f172a,#111827);
+border:1px solid rgba(255,255,255,.05);
+transition:.4s;
+}
+
+.service-card:hover{
+transform:translateY(-10px) scale(1.02);
+background:linear-gradient(135deg,#2d006e,#001f54,#003f5c);
+box-shadow:0 0 40px rgba(111,0,255,.5);
+}
+
+.service-card i{
+font-size:50px;
+margin-bottom:20px;
+background:linear-gradient(to right,#00ff88,#00bbff,#b700ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+/* PORTFOLIO */
+
+.itheme-portfolio-1{
+position:relative;
+overflow:hidden;
+border-radius:20px;
+margin-bottom:30px;
+}
+
+.itheme-portfolio-1 img{
+width:100%;
+transition:1s;
+border-radius:20px;
+}
+
+.itheme-portfolio-1:hover img{
+transform:scale(1.1);
+filter:blur(2px);
+}
+
+.itheme-portfolio-2{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.75);
+display:flex;
+justify-content:center;
+align-items:center;
+opacity:0;
+transition:.5s;
+padding:20px;
+text-align:center;
+}
+
+.itheme-portfolio-1:hover .itheme-portfolio-2{
+opacity:1;
+}
+
+.itheme-portfolio-4{
+font-size:22px;
+font-weight:700;
+}
 
 
-    <!-- END OF CSS -->
+     /* =======================================================
+           REVIEWS
+        ======================================================= */
+
+        .itheme-div-6 {
+
+background:
+linear-gradient(
+    145deg,
+    rgba(17,24,39,.95),
+    rgba(15,23,42,.9)
+);
+
+padding: 70px;
+
+border-left:
+8px solid #8b5cf6;
+}
+
+
+
+/* CONTACT */
+
+.contact-box{
+background:linear-gradient(135deg,#09111f,#120024,#041c32);
+padding:50px;
+border-radius:25px;
+box-shadow:0 0 50px rgba(0,119,255,.25);
+}
+
+.form-control{
+background:#0d1320;
+border:none;
+height:55px;
+color:white;
+margin-bottom:20px;
+}
+
+textarea.form-control{
+height:180px;
+}
+
+.form-control:focus{
+background:#111827;
+color:white;
+box-shadow:0 0 15px rgba(111,0,255,.5);
+}
+
+.socials a{
+display:inline-flex;
+justify-content:center;
+align-items:center;
+width:55px;
+height:55px;
+border-radius:50%;
+background:rgba(255,255,255,.05);
+margin:10px;
+font-size:22px;
+color:white;
+transition:.4s;
+}
+
+.socials a:hover{
+background:linear-gradient(135deg,#ff00cc,#3333ff,#00ff99);
+transform:translateY(-6px);
+}
+
+/* FOOTER */
+
+footer{
+padding:80px 0;
+background:linear-gradient(135deg,#2d006e,#001f54,#003f5c);
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+footer:before{
+content:'';
+position:absolute;
+width:600px;
+height:600px;
+background:radial-gradient(circle,#ff00cc55,transparent);
+top:-250px;
+left:-250px;
+}
+
+footer:after{
+content:'';
+position:absolute;
+width:600px;
+height:600px;
+background:radial-gradient(circle,#00bbff55,transparent);
+bottom:-250px;
+right:-250px;
+}
+
+footer h2{
+font-family:'Paytone One',sans-serif;
+font-size:45px;
+position:relative;
+z-index:2;
+}
+
+footer p{
+position:relative;
+z-index:2;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero-title{
+font-size:45px;
+}
+
+.section-title{
+font-size:42px;
+}
+
+header{
+text-align:center;
+padding-top:120px;
+}
+
+}
+
+</style>
 </head>
-<!-- END OF HEAD -->
 
-<center><body id="itheme-body">
-    <!-- NAVIGATION BAR -->
-    <nav id="itheme-navbar" class="navbar navbar-expand-lg navbar-expand-xl navbar-dark fixed-top">
-        <a class="navbar-brand" style="background-image:url('https://raw.githubusercontent.com/EONcodeflicker/EONcodeflicker.github.io/main/6EBBBCF6-AEB4-481B-8FDC-3040356A05A2.jpeg'); background-repeat: no-repeat; background-size: contain; width: 50px; height: 50px;">
-            <!-- WEBSITE LOGO -->
-          
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#expands" aria-controls="expands" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-        <div class="collapse navbar-collapse" id="expands">
-            <ul class="navbar-nav text-center ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link itheme-nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link itheme-nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link itheme-nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link itheme-nav-link" href="#services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link itheme-nav-link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link itheme-nav-link" href="#reviews">Reviews</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link itheme-nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- END OF NAVIGATION BAR -->
-    <!-- HEADER -->
-    <header id="home" class="itheme-show-link itheme-thetop">
-        <div class="container-fluid h-100 itheme-container">
-            <div class="row h-100 align-items-center itheme-row">
-                <p class="itheme-mark" style="color: #2DD881">HOME</p>
-                <div class="col-12 col-sm-10 col-md-10 col-lg-6 col-xl-6 itheme-column">
-                    <div class="pl-3 pl-sm-5 pl-md-5 pl-lg-5 pl-xl-5">
-                        <div id="typed-strings" class="my-5 text-left itheme-div-1">
-                            <h1>HEY!!!</h1>
-                            <h1>MY NAME IS THOMAS FLICK</h1>
-                            <h1>I AM A <span id="itheme-typed" class="itheme-color-2"></span></h1>
-                            <p class="mt-5">
-                                Welcome to my official portfolio!!! Here you will find out more about me, the type of high quality work that i do, and what i can accomplish for your business and/or clients.
-                            </p>
-                        </div>
-                        <div class="my-5 wow fadeInLeft" data-wow-duration="2s">
-                            <a href="#portfolio" class="btn btn-lg itheme-button-1" role="button">See My Work</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 itheme-column">
-                    <div class="embed-responsive embed-responsive-16by9 ithemeD8-video">
-                        <iframe class="embed-responsive-item" src="https://www.loom.com/embed/2d31887d25d64479aceee6f3dd0f0195" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- END OF HEADER -->
-    <!-- ABOUT -->
-    <section id="about" class="itheme-show-link">
-        <div class="container-fluid h-100 itheme-container">
-            <div class="row h-100 align-items-center itheme-row">
-                <p class="itheme-mark" style="color:red">ABOUT</p>
-                <div class="col-11 itheme-column">
-                    <div class="pl-3 pl-sm-5 pl-md-5 pl-lg-5 pl-xl-5">
-                        <div class="my-5 itheme-div-2">
-                            <h2>ABOUT</h2>
-                            <hr class="mb-5 itheme-hr-1">
-                            <p>
-                                Hello, my name is Thomas Lee Flick, the creator of the technology firm Option Alternative and self-taught software developer from Cincinnati, OH. I would say that my strongest point is my ability to create unique and stunning designs using cutting edge technologies. I'm also a musician and try to apply how i write songs to design/development so it becomes less stale and more unique..
-                            </p>
-                            <p class="mt-5">
-                                I possess anagalactic talents, technical know-how, deep knowledge, and passion to create amazing web design|development|robust software products. I have a work hard/play hard philosophy,but i also think outside the box. I am very headstrong and stubborn about ways i like to do things and am a extreme independent thinker. If you have patience and your business, whether it be big or small wants a superb product, then look no further.
-                            </p>
-                            <p class="wow bounce mt-5" data-wow-duration="2s">
-								<div>
-                                <a href="tel:5134417458" class="btn btn-lg itheme-button-2" role="button">Hire Me</a></div>
-                                <div><a href="https://www.dropbox.com/scl/fi/fs03gsbcxnmzptjt5xiw3/OFFICIALRESUME25.pdf?rlkey=x90rlb2n5nhs696hn2tcbej3j&st=1k8ofnak&dl=0" download class="btn btn-lg itheme-button-2" role="button">Download Resume</a>
-								</div></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1 my-5 itheme-column itheme-box-3">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END OF ABOUT -->
-    <!-- SKILLS -->
-    <section id="skills" class="itheme-show-link">
-        <div class="container-fluid h-100 itheme-container">
-            <div class="row h-100 align-items-center itheme-row">
-                <p class="itheme-mark" style="color:lightblue">SKILLS</p>
-                <div class="col-1 my-5 itheme-column itheme-box-4">
-                </div>
-                <div class="col-11 itheme-column">
-                    <div class="pr-3 pr-sm-5 pr-md-5 pr-lg-5 pr-xl-5">
-                        <div class="my-5 text-right itheme-div-3">
-                            <h2>SKILLS</h2>
-                            <hr class="mb-5 itheme-hr-2">
-                            <p class="mb-5">
-                                Here are my skills & strengths in each coding language that i consider to be in my repoitoire.
-                            </p>
-                            <div class="wow fadeInRight" data-wow-duration="5s">
-                                <h6 class="itheme-progress-bar-label">HTML</h6>
-                                <div class="progress itheme-progress-bar">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated itheme-progress-bar-1" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                                        <h5>100%</h5>
-                                    </div>
-                                </div>
-                                <h6 class="itheme-progress-bar-label">CSS</h6>
-                                <div class="progress itheme-progress-bar">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated itheme-progress-bar-2" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                                        <h5>100%</h5>
-                                    </div>
-                                </div>
-                                <h6 class="itheme-progress-bar-label">JS & Node.js</h6>
-                                <div class="progress itheme-progress-bar">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated itheme-progress-bar-3" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%">
-                                        <h5>88%</h5>
-                                    </div>
-                                </div>
-                                <h6 class="itheme-progress-bar-label">PHP</h6>
-                                <div class="progress itheme-progress-bar">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated itheme-progress-bar-4" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                                        <h5>90%</h5>
-                                    </div>
-                                </div>
-                                <h6 class="itheme-progress-bar-label">C#</h6>
-                                <div class="progress itheme-progress-bar">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated itheme-progress-bar-5" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
-                                        <h5>95%</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END OF SKILLS -->
-    <!-- SERVICES -->
-    <section id="services" class="itheme-show-link">
-        <div class="container-fluid h-100 itheme-container">
-            <div class="row h-100 align-items-center itheme-row">
-                <p class="itheme-mark" style="color: #EF8354">SERVICES</p>
-                <div class="col-11 itheme-column">
-                    <div class="pl-3 pl-sm-5 pl-md-5 pl-lg-5 pl-xl-5">
-                        <div class="my-5 itheme-div-4">
-                            <h2>SERVICES</h2>
-                            <hr class="mb-5 itheme-hr-4">
-                            <p class="mb-5">
-                                Here are my Services and what i bring to the table.
-                            </p>
-                            <div class="row h-100 justify-content-center align-items-center wow fadeInLeft" data-wow-duration="5s">
-                                <div class="col-10 col-sm-10 col-md-10 col-lg-2 col-xl-2 itheme-service-1">
-                                    <div class="d-flex h-100 text-center justify-content-center align-items-center">
-                                        <h5>I can make beautiful and responsive websites for your clientele/customers.</h5>
-                                    </div>
-                                </div>
-                                <div class="col-10 col-sm-10 col-md-10 col-lg-2 col-xl-2 itheme-service-2">
-                                    <div class="d-flex h-100 text-center justify-content-center align-items-center">
-                                        <h5>I can develop interesting applications and engineer amazing software to suit your needs. </h5>
-                                    </div>
-                                </div>
-                                <div class="col-10 col-sm-10 col-md-10 col-lg-3 col-xl-3 itheme-service-3">
-                                    <div class="d-flex h-100 text-center justify-content-center align-items-center">
-                                        <h5>I can build surreal Video Games in Unity that will please gamers thirst for escape.</h5>
-                                    </div>
-                                </div>
-                                <div class="col-10 col-sm-10 col-md-10 col-lg-2 col-xl-2 itheme-service-4">
-                                    <div class="d-flex h-100 text-center justify-content-center align-items-center">
-                                        <h5>I can modify personally handpicked bootstrap templates to match brand identity.</h5>
-                                    </div>
-                                </div>
-                                <div class="col-10 col-sm-10 col-md-10 col-lg-2 col-xl-2 itheme-service-5">
-                                    <div class="d-flex h-100 text-center justify-content-center align-items-center">
-                                        <h5>I can create beautiful & unique custom design concepts!</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1 my-5 itheme-column itheme-box-5">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END OF SERVICES -->
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="itheme-show-link">
-        <div class="container-fluid h-100 itheme-container">
-            <div class="row h-100 align-items-center itheme-row">
-                <p class="itheme-mark" style="color: #4392F1">PORTFOLIO</p>
-                <div class="col-1 my-5 itheme-column itheme-box-6">
-                </div>
-                <div class="col-11 itheme-column">
-                    <div class="pr-3 pr-sm-5 pr-md-5 pr-lg-5 pr-xl-5">
-                        <div class="my-5 text-right itheme-div-5">
-                            <h2>PORTFOLIO</h2>
-                            <hr class="mb-5 itheme-hr-3">
-                            <p class="mb-5">
-                                Here is work that i've done that highlights my skills in real time. Be advised that i'm still currently working on several projects, sometimes simultaneously.
-                            </p>
-                            <div class="card-columns itheme-card-columns wow fadeInRight" data-wow-duration="5s">
-                                <div class="itheme-portfolio-1">
-                                    <a href="https://optionalternative.io">
-                                        <img class="img-fluid" src="https://raw.githubusercontent.com/EONcodeflicker/EONcodeflicker.github.io/main/B4D4E9F1-118F-4312-B332-8387BD9DC867.jpeg" alt="PortfolioImage1">
-                                        <div class="itheme-portfolio-2">
-                                            <div class="itheme-portfolio-3">
-                                                <p class="itheme-portfolio-4" > Business or Tech websites for clients large and small, like my technology firm a Option Alternative</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="itheme-portfolio-1">
-                                    <a href="https://EONcodeflicker.github.io/drivelguffgum">
-                                        <img class="img-fluid" src="https://raw.githubusercontent.com/EONcodeflicker/EONcodeflicker.github.io/main/A2357900-8D4C-46DC-B97F-C52967551BFC.webp" alt="PortfolioImage2">
-                                        <div class="itheme-portfolio-2">
-                                            <div class="itheme-portfolio-3">
-                                                <p class="itheme-portfolio-4">Interesting Apps Like Drivel Guff Gum </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="itheme-portfolio-1">
-                                    <a href="https://eon.brushd.com">
-                                        <img class="img-fluid" src="https://raw.githubusercontent.com/EONcodeflicker/EONcodeflicker.github.io/main/88877B02-5E38-41CB-81C6-A72738A5EC7F.jpeg" alt="PortfolioImage3">
-                                        <div class="itheme-portfolio-2">
-                                            <div class="itheme-portfolio-3">
-                                                <p class="itheme-portfolio-4">Personal Web Experiences/Blogs</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                              
-				    
-                                <div class="itheme-portfolio-1">
-                                    <a href="https://kc-painting-and-repair.webflow.io">
-                                        <img class="img-fluid" src="https://cdn.vectorstock.com/i/preview-1x/14/44/paintbrush-and-palette-paints-silhouette-vector-38721444.jpg" alt="PortfolioImage5">
-                                        <div class="itheme-portfolio-2">
-                                            <div class="itheme-portfolio-3">
-                                                <p class="itheme-portfolio-4">Webflow Design and Branding for small Business Websites </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END OF PORTFOLIO -->
-    <!-- REVIEWS -->
-    <section id="reviews" class="itheme-show-link">
-        <div class="container-fluid h-100 itheme-container">
-            <div class="row h-100 align-items-center itheme-row">
-                <p class="itheme-mark" style="color: #E55812 ">REVIEWS</p>
-                <div class="col-11 itheme-column">
-                    <div class="pl-3 pl-sm-5 pl-md-5 pl-lg-5 pl-xl-5">
-                        <div class="my-5 itheme-div-6">
-                            <h2>REVIEWS</h2>
-                            <hr class="mb-5 itheme-hr-5">
-                            <div class="owl-carousel itheme-owl-1">
-                                <div>
-                                    <p class="font-italic">
-                                        <sup><i class="fas fa-quote-left text-white"></i></sup> <!--review1-->
-                                        <sup><i class="fas fa-quote-right text-white"></i></sup>
-                                    </p>
-                                    <p class="pt-3">
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                    </p>
-                                    <h5><!--rNAME--></h5>
-                                    <small>Profession</small>
-                                    <p class="mt-5 font-italic">
-                                        <sup><i class="fas fa-quote-left text-white"></i></sup> <!--review-->
-                                        <sup><i class="fas fa-quote-right text-white"></i></sup>
-                                    </p>
-                                    <p class="pt-3">
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                    </p>
-                                    <h5><!--rNAME--></h5>
-                                    <small>Profession</small>
-                                </div>
-                                <div>
-                                    <p class="font-italic">
-                                        <sup><i class="fas fa-quote-left text-white"></i></sup> <!--review-->
-                                        <sup><i class="fas fa-quote-right text-white"></i></sup>
-                                    </p>
-                                    <p class="pt-3">
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                    </p>
-                                    <h5><!--rNAME--></h5>
-                                    <small>Profession</small>
-                                    <p class="mt-5 font-italic">
-                                        <sup><i class="fas fa-quote-left text-white"></i></sup> <!--review-->
-                                        <sup><i class="fas fa-quote-right text-white"></i></sup>
-                                    </p>
-                                    <p class="pt-3">
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                        <i class="fa fa-star itheme-reviews-1"></i>
-                                    </p>
-                                    <h5><!--rNAME--></h5>
-                                    <small>Profession</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1 my-5 itheme-column itheme-box-7">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END OF REVIEWS -->
-    <!-- CONTACT -->
-    <section id="contact" class="img-fluid">
-        <div class="container-fluid h-100 itheme-container">
-            <div class="row h-100 align-items-center itheme-row">
-                <p class="itheme-mark" style="color:lime">CONTACT</p>
-                <div class="col-1 my-5 itheme-column itheme-box-8">
-                </div>
-                <div class="col-11 itheme-column">
-                    <div class="pr-3 pr-sm-5 pr-md-5 pr-lg-5 pr-xl-5">
-                        <div class="my-5 text-right itheme-div-7">
-                            <h2>CONTACT</h2>
-                            <hr class="mb-5 itheme-hr-6">
-                            <p class="mb-5">
-                                Hit me up and see if we can arrange a consultation to discuss what you would like me to create for you, your clients, and/or business.
-                            </p>
-                            <form id="form" method="POST" action="https://formspree.io/f/xleyywaa"  class="contact-form" >
-                                <div class="col-sm-11 col-md-11 col-lg-8 col-xl-8 ml-auto">
-                                    <div class="form-group itheme-field text-right">
-                                        <label for="form_name">Firstname</label>
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Firstname" required="required">
-                                    </div>
-                                    <div class="form-group itheme-field text-right">
-                                        <label for="form_lastname">Lastname</label>
-                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Lastname" required="required">
-                                    </div>
-                                    <div class="form-group itheme-field text-right">
-                                        <label for="form_email">Email</label>
-                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required">
-                                    </div>
-                                    <div class="form-group itheme-field text-right">
-                                        <label for="form_message">Message</label>
-                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4"></textarea>
-                                    </div>
-                                    <div class="form-group my-5 wow fadeInRight" data-wow-duration="2s">
-                                        <input type="submit"  class="btn btn-lg itheme-button-4" value="CONTACT ME">
-                                    </div>
-                                </div>
-                            </form>
-                            <div class="ml-auto">
-                                <a href="https://Instagram.com/eonmovieset" class="itheme-contact-1"><i class="fab fa-instagram fa-lg mr-2"></i></a>
-                                <a href="https://facebook.com/eonmovieset" class="itheme-contact-1"><i class="fab fa-facebook-f fa-lg mr-2"></i></a>
-                                <a href="https://twitter.com/eonmovieset" class="itheme-contact-1"><i class="fab fa-twitter fa-lg mr-2"></i></a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<body>
 
-</center>
+<!-- NAVBAR -->
+
+<nav id="itheme-navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navMenu">
+<ul class="navbar-nav ml-auto">
+
+<li class="nav-item">
+<a class="nav-link itheme-nav-link" href="#home">HOME</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link itheme-nav-link" href="#about">ABOUT</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link itheme-nav-link" href="#skills">SKILLS</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link itheme-nav-link" href="#services">SERVICES</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link itheme-nav-link" href="#portfolio">PORTFOLIO</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link itheme-nav-link" href="#contact">CONTACT</a>
+</li>
+
+</ul>
+</div>
+</nav>
+
+<!-- HERO -->
+
+<header id="home">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6 wow animate__animated animate__fadeInLeft">
+
+<h1 class="hero-title">
+    <br>
+HELLO!!!<br>
+I'M <span>THOMAS FLICK</span><br>
+<span id="typed"></span>
+</h1>
+
+<p class="hero-desc">
+Welcome to my official portfolio website where innovation, surreal design, software engineering, branding, gaming, and interactive digital experiences collide into one futuristic ecosystem.
+</p>
+
+<a href="#portfolio" class="itheme-button">
+SEE MY WORK
+</a>
+
+</div>
+
+<div class="col-lg-6 wow animate__animated animate__fadeInRight mt-5 mt-lg-0">
+
+<div class="video-box">
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item"
+src="https://www.loom.com/embed/2d31887d25d64479aceee6f3dd0f0195"
+frameborder="0"
+allowfullscreen>
+</iframe>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="row justify-content-center">
+
+<div class="col-lg-10 text-center wow animate__animated animate__fadeInUp">
+
+<h2 class="section-title">
+<span>ABOUT</span>
+</h2>
+
+<div class="glow-box">
+
+<p class="section-desc">
+Hello, my name is Thomas Lee Flick, creator of Option Alternative and self-taught software developer from Cincinnati, Ohio. My specialty revolves around creating futuristic digital ecosystems, powerful applications, surreal UI/UX experiences, and highly immersive branding systems.
+</p>
 
 <br>
-	<br>
-	
-    <!-- END OF CONTACT -->
-    <!-- FOOTER -->
-	<div>
-    <footer id="itheme-footer">
-        <div class="container-fluid py-5 text-right">
-            <h6>Thomas Flick © 2026.</h6>
+
+<p class="section-desc">
+I combine software engineering, visual creativity, gaming inspiration, music composition mentality, and business strategy into one unified workflow to deliver products that feel modern, cinematic, interactive, and unforgettable.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<div class="container">
+
+<h2 class="section-title text-center wow animate__animated animate__fadeInDown">
+<span>SKILLS</span>
+</h2>
+
+<div class="row mt-5">
+
+<div class="col-lg-6">
+
+<div class="skill">
+<h5>HTML5</h5>
+<div class="progress">
+<div class="progress-bar" style="width:100%">100%</div>
+</div>
+</div>
+
+<div class="skill">
+<h5>CSS3 / SCSS</h5>
+<div class="progress">
+<div class="progress-bar" style="width:100%">100%</div>
+</div>
+</div>
+
+<div class="skill">
+<h5>JavaScript</h5>
+<div class="progress">
+<div class="progress-bar" style="width:95%">95%</div>
+</div>
+</div>
+
+
+<div class="skill">
+<h5>Node.js</h5>
+<div class="progress">
+<div class="progress-bar" style="width:94%">94%</div>
+</div>
+</div>
+
+<div class="skill">
+<h5>PHP</h5>
+<div class="progress">
+<div class="progress-bar" style="width:90%">90%</div>
+</div>
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="skill">
+<h5>C# / Unity</h5>
+<div class="progress">
+<div class="progress-bar" style="width:95%">95%</div>
+</div>
+</div>
+
+<div class="skill">
+<h5>Python</h5>
+<div class="progress">
+<div class="progress-bar" style="width:88%">85%</div>
+</div>
+</div>
+
+<div class="skill">
+<h5>java</h5>
+<div class="progress">
+<div class="progress-bar" style="width:90%">80%</div>
+</div>
+</div>
+
+<div class="skill">
+<h5>Webflow</h5>
+<div class="progress">
+<div class="progress-bar" style="width:95%">95%</div>
+</div>
+</div>
+
+<div class="skill">
+<h5>UI / UX Design</h5>
+<div class="progress">
+<div class="progress-bar" style="width:100%">100%</div>
+</div>
+</div>
+
+<div class="skill">
+<h5>SEO / Branding</h5>
+<div class="progress">
+<div class="progress-bar" style="width:93%">93%</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="container">
+
+<h2 class="section-title text-center">
+<span>SERVICES</span>
+</h2>
+
+<div class="row mt-5">
+
+<div class="col-lg-4 mb-4">
+<div class="service-card wow animate__animated animate__fadeInUp">
+<i class="fas fa-laptop-code"></i>
+<h4>Web Design</h4>
+<p>Modern responsive websites with futuristic UI/UX systems.</p>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="service-card wow animate__animated animate__fadeInUp">
+<i class="fas fa-mobile-alt"></i>
+<h4>Application Development</h4>
+<p>Robust mobile/web applications engineered for performance.</p>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="service-card wow animate__animated animate__fadeInUp">
+<i class="fas fa-gamepad"></i>
+<h4>Game Development</h4>
+<p>Interactive Unity experiences and surreal gameplay systems.</p>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="service-card wow animate__animated animate__fadeInUp">
+<i class="fas fa-palette"></i>
+<h4>Brand Identity</h4>
+<p>Custom logos, concepts, visual ecosystems, and branding.</p>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="service-card wow animate__animated animate__fadeInUp">
+<i class="fas fa-search"></i>
+<h4>SEO Optimization</h4>
+<p>Search optimization and digital presence enhancement.</p>
+</div>
+</div>
+
+<div class="col-lg-4 mb-4">
+<div class="service-card wow animate__animated animate__fadeInUp">
+<i class="fas fa-server"></i>
+<h4>Software Engineering</h4>
+<p>Full stack architecture and scalable software ecosystems.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio">
+
+<div class="container">
+
+<h2 class="section-title text-center">
+<span>PORTFOLIO</span>
+</h2>
+
+<div class="card-columns mt-5">
+
+<div class="itheme-portfolio-1">
+<a href="https://optionalternative.io">
+<img src="https://raw.githubusercontent.com/EONcodeflicker/EONcodeflicker.github.io/main/B4D4E9F1-118F-4312-B332-8387BD9DC867.jpeg">
+<div class="itheme-portfolio-2">
+<p class="itheme-portfolio-4">Option Alternative Technology Firm</p>
+</div>
+</a>
+</div>
+
+<div class="itheme-portfolio-1">
+<a href="https://EONcodeflicker.github.io/drivelguffgum">
+<img src="https://raw.githubusercontent.com/EONcodeflicker/EONcodeflicker.github.io/main/A2357900-8D4C-46DC-B97F-C52967551BFC.webp">
+<div class="itheme-portfolio-2">
+<p class="itheme-portfolio-4">Drivel Guff Gum Interactive Experience</p>
+</div>
+</a>
+</div>
+
+<div class="itheme-portfolio-1">
+<a href="https://eon.brushd.com">
+<img src="https://raw.githubusercontent.com/EONcodeflicker/EONcodeflicker.github.io/main/88877B02-5E38-41CB-81C6-A72738A5EC7F.jpeg">
+<div class="itheme-portfolio-2">
+<p class="itheme-portfolio-4">Creative Blogs & Web Experiences</p>
+</div>
+</a>
+</div>
+
+<div class="itheme-portfolio-1">
+<a href="https://kc-painting-and-repair.webflow.io">
+<img src="https://cdn.vectorstock.com/i/preview-1x/14/44/paintbrush-and-palette-paints-silhouette-vector-38721444.jpg">
+<div class="itheme-portfolio-2">
+<p class="itheme-portfolio-4">Webflow Design & Branding</p>
+</div>
+</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- REVIEWS -->
+
+<section id="reviews">
+
+
+
+    <div class="container itheme-container">
+
+        <div class="itheme-div-6 wow fadeInUp">
+
+            <h2 class="section-title text-center">
+                REVIEWS
+            </h2>
+
+            <hr class="itheme-line">
+
+            <p>
+                “Outstanding creativity and technical execution.”
+            </p>
+
         </div>
-    </footer>
-	</div>
-    <!-- END OF FOOTER -->
-<!-- GAMEFLY AD LINK -->
+
+    </div>
+
+</section>
 
 
+<!-- CONTACT -->
 
-    <!-- JQUERY JS -->
+<section id="contact">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- POPPER JS -->
-    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
-    <!-- BOOTSTRAP JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- OWL CAROUSEL JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- WOW JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <!-- TYPED JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <!-- MAIN JS -->
-    <script src="scriptTyped.js"></script>
-    <!-- END OF JQUERY JS -->
+<div class="container">
+
+<div class="contact-box wow animate__animated animate__fadeInUp">
+
+<h2 class="section-title text-center">
+<span>CONTACT</span>
+</h2>
+
+<form action="https://formspree.io/f/xleyywaa" method="POST">
+
+<div class="row">
+
+<div class="col-md-6">
+<input type="text" class="form-control" placeholder="Firstname">
+</div>
+
+<div class="col-md-6">
+<input type="text" class="form-control" placeholder="Lastname">
+</div>
+
+<div class="col-md-12">
+<input type="email" class="form-control" placeholder="Email">
+</div>
+
+<div class="col-md-12">
+<textarea class="form-control" placeholder="Message"></textarea>
+</div>
+
+<div class="col-md-12 text-center">
+<button class="itheme-button">
+CONTACT ME
+</button>
+</div>
+
+</div>
+
+</form>
+
+<div class="socials text-center mt-5">
+
+<a href="https://instagram.com/eonmovieset">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://facebook.com/eonmovieset">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="https://twitter.com/eonmovieset">
+<i class="fab fa-twitter"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>THOMAS FLICK</h2>
+
+<p class="mt-4">
+© 2026 Official Portfolio | Designed & Engineered By Thomas Flick
+</p>
+
+</footer>
+
+<!-- SCRIPTS -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+<script>
+new WOW().init();
+
+new Typed('#typed', {
+strings: [
+'SOFTWARE ENGINEER',
+'FULL STACK DEVELOPER',
+'MUSICIAN',
+'BASSIST',
+'GAME DEVELOPER',
+'CREATIVE TECHNOLOGIST',
+'BRAND DESIGNER'
+],
+typeSpeed:70,
+backSpeed:40,
+loop:true
+});
+</script>
+
 </body>
-</center>
 </html>
