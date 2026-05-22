@@ -1,3 +1,3 @@
 # Portfolio Website
-official portfolio(NEW)
+official portfolio
 http://EONcodeflicker.github.io/
