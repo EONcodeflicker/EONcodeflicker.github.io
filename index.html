@@ -288,24 +288,48 @@ font-size:22px;
 font-weight:700;
 }
 
+/* REVIEWS */
 
-     /* =======================================================
-           REVIEWS
-        ======================================================= */
+.review-card{
+padding:40px 30px;
+border-radius:20px;
+height:100%;
+background:linear-gradient(135deg,#0f172a,#111827);
+border:1px solid rgba(255,255,255,.05);
+transition:.4s;
+backdrop-filter:blur(10px);
+text-align:center;
+}
 
-        .itheme-div-6 {
+.review-card:hover{
+transform:translateY(-10px) scale(1.02);
+background:linear-gradient(135deg,#2d006e,#001f54,#003f5c);
+box-shadow:0 0 40px rgba(111,0,255,.5);
+}
 
-background:
-linear-gradient(
-    145deg,
-    rgba(17,24,39,.95),
-    rgba(15,23,42,.9)
-);
+.review-stars{
+margin-bottom:20px;
+}
 
-padding: 70px;
+.review-stars i{
+font-size:22px;
+margin:0 3px;
+background:linear-gradient(to right,#00ff88,#00bbff,#b700ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
 
-border-left:
-8px solid #8b5cf6;
+.review-text{
+font-size:18px;
+line-height:1.9;
+color:#d5d5d5;
+margin-bottom:25px;
+}
+
+.review-name{
+font-weight:700;
+font-size:18px;
+color:white;
 }
 
 
@@ -779,33 +803,98 @@ I combine software engineering, visual creativity, gaming inspiration, music com
 
 </section>
 
-
 <!-- REVIEWS -->
 
 <section id="reviews">
 
+<div class="container">
 
+    <h2 class="section-title text-center wow animate__animated animate__fadeInDown">
+        <span>REVIEWS</span>
+    </h2>
 
-    <div class="container itheme-container">
+    <div class="row mt-5">
 
-        <div class="itheme-div-6 wow fadeInUp">
+        <!-- REVIEW 1 -->
+        <div class="col-lg-4 mb-4">
 
-            <h2 class="section-title text-center">
-                REVIEWS
-            </h2>
+            <div class="review-card wow animate__animated animate__fadeInUp">
 
-            <hr class="itheme-line">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
 
-            <p>
-                “Outstanding creativity and technical execution.”
-            </p>
+                <p class="review-text">
+                    “Outstanding creativity and technical execution.”
+                </p>
+
+                <h5 class="review-name">
+                    — Client Review
+                </h5>
+
+            </div>
+
+        </div>
+
+        <!-- REVIEW 2 -->
+        <div class="col-lg-4 mb-4">
+
+            <div class="review-card wow animate__animated animate__fadeInUp">
+
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <p class="review-text">
+                    “One of the most futuristic portfolio experiences I've seen.”
+                </p>
+
+                <h5 class="review-name">
+                    — Creative Director
+                </h5>
+
+            </div>
+
+        </div>
+
+        <!-- REVIEW 3 -->
+        <div class="col-lg-4 mb-4">
+
+            <div class="review-card wow animate__animated animate__fadeInUp">
+
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <p class="review-text">
+                    “Exceptional UI/UX vision combined with real engineering skill.”
+                </p>
+
+                <h5 class="review-name">
+                    — Tech Startup Founder
+                </h5>
+
+            </div>
 
         </div>
 
     </div>
 
-</section>
+</div>
 
+</section>
 
 <!-- CONTACT -->
 
