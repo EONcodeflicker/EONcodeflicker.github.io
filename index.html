@@ -702,7 +702,7 @@ I combine software engineering, visual creativity, gaming inspiration, music com
 <div class="container">
 
 <h2 class="section-title text-center">
-<span>SERVICES & WHAT WORK I DO.</span>
+<span>SERVICES & WHAT I DO.</span>
 </h2>
 
 <div class="row mt-5">
@@ -773,10 +773,10 @@ I combine software engineering, visual creativity, gaming inspiration, music com
 <div class="card-columns mt-5">
 
 <div class="itheme-portfolio-1">
-<a href="https://optionalternative.io">
-<img src="https://raw.githubusercontent.com/EONcodeflicker/EONcodeflicker.github.io/main/B4D4E9F1-118F-4312-B332-8387BD9DC867.jpeg">
+<a href="">
+<img src="">
 <div class="itheme-portfolio-2">
-<p class="itheme-portfolio-4">Option Alternative Technology Firm</p>
+<p class="itheme-portfolio-4"></p>
 </div>
 </a>
 </div>
@@ -919,35 +919,41 @@ I combine software engineering, visual creativity, gaming inspiration, music com
 <span>CONTACT</span>
 </h2>
 
-<form action="https://formspree.io/f/xleyywaa " method="POST">
 
-<div class="row">
 
-<div class="col-md-6">
-<input type="text" class="form-control" placeholder="Firstname">
-</div>
 
-<div class="col-md-6">
-<input type="text" class="form-control" placeholder="Lastname">
-</div>
+<form action="https://formspree.io/f/xleyywaa" method="POST">
 
-<div class="col-md-12">
-<input type="email" class="form-control" placeholder="Email">
-</div>
+  <div class="row">
 
-<div class="col-md-12">
-<textarea class="form-control" placeholder="Message"></textarea>
-</div>
+    <div class="col-md-6">
+      <input type="text" name="firstname" class="form-control" placeholder="Firstname" required>
+    </div>
 
-<div class="col-md-12 text-center">
-<button class="itheme-button">
-CONTACT ME
-</button>
-</div>
+    <div class="col-md-6">
+      <input type="text" name="lastname" class="form-control" placeholder="Lastname" required>
+    </div>
 
-</div>
+    <div class="col-md-12">
+      <input type="email" name="email" class="form-control" placeholder="Email" required>
+    </div>
+
+    <div class="col-md-12">
+      <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+    </div>
+
+    <div class="col-md-12">
+      <button type="submit">Send</button>
+        <input type="hidden" name="_subject" value="New Contact Form Submission">
+        <input type="hidden" name="_redirect" value="https://yourwebsite.com/thanks.html">
+    </div>
+
+  </div>
 
 </form>
+
+
+    
 
 <div class="socials text-center mt-5">
 
